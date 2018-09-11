@@ -1,179 +1,145 @@
-/*
-Color Theme
-Gray (Background Color)
-rgb(115, 115, 115)
-
-Green (Active Color)
-#4CAF50
-
-Dark Gray (Unselected Buttons)
-#333
-
-Black (Hover Over Buttons)
-#111
-
-Other
-https://designers.hubspot.com/blog/15-examples-of-homepage-designsamples
-https://www.w3schools.com/colors/colors_picker.asp
-*/
-
-/*Gray*/
-/*Green*/
-/*Dark Gray*/
-/*Black*/
-
-/*Menu Stuff*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    
-/*Sticky Menu*/
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    border-bottom: 6px solid #4CAF50;
-}
-
-footer{
-        border-bottom: 6px solid #4CAF50;
-
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-/*Image Gallery*/
-* {
-    box-sizing: border-box;
-}
-
+/*Navbar*/
 body {
-    /*background-color: #f1f1f1;*/
-    padding: 20px;
-    font-family: Arial;
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
 }
 
-h1 {
-    font-size: 50px;
-    word-break: break-all;
+#navbar {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.row {
-    margin: 8px -16px;
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-    padding: 8px;
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: white;
-    padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .column {
-        width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-/*Border*/
-p1 {
-    border-bottom: 6px solid #4CAF50;
-    background-color: #333;
-}
-
-/*Padding the Welcome
-h1 {
-    border: 1px solid black;
-    *Alt ???*
-    background-image: url("/images/Welcome.jpg");
-    padding-top: 300px;
-    padding-bottom: 300px;
-    text-align: center;
-    color:#FFFFFF;
-
-    Don't Really Need
-    padding-right: 80px;
-    padding-left: 80px;
-    */
-}
-
-/*Background Color*/
-body{
-    background-color: rgb(115, 115, 115);
-}
-
-/*Button Stuff*/
-/*Gray*/
-/*
-.button {
-    background-color: #4CAF50; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-*/
-
-/*Animated Button (Right)*/
-.button1 {
-  display: inline-block;
-  border-radius: 4px;
+#navbar a.active {
   background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*Basic Website*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("images/andromeda-galaxy.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("images/dawn.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("images/desert.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("images/ivy.jpg");
+  min-height: 400px;
+}
+
+.bgimg-5 {
+  background-image: url("images/andromeda-galaxy.jpg");
+  min-height: 400px;
+}
+
+.bgimg-6 {
+  background-image: url("images/ivy.jpg");
+  min-height: 200px;
+}
+
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/*Timer*/
+p10 {
+  text-align: center;
+  font-size: 60px;
+}
+
+/*Animated Button*/
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -185,75 +151,89 @@ body{
   margin: 5px;
 }
 
-.button1 span {
+.button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button1 span:after {
+.button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
-  resize: 50px;
 }
 
-.button1:hover span {
-  padding-right: 30px;
+.button:hover span {
+  padding-right: 25px;
 }
 
-.button1:hover span:after {
+.button:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-/*Animated Button (Left)*/
-.button2 {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #4CAF50;
+/*meet the team cards*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button1 {
   border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button2 span {
-  cursor: pointer;
+  outline: 0;
   display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
 }
 
-.button2 span:after {
-  content: '\00ab';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: -20px;
-  transition: 0.5s;
-  resize: 50px;
+.button1:hover {
+  background-color: #555;
 }
 
-.button2:hover span {
-  padding-left: 30px;
-}
-
-.button2:hover span:after {
-  opacity: 1;
-  left: 0;
-}
-
-/*How To (Small Tabs)*/
+/*Project Tabs*/
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
 
@@ -277,7 +257,9 @@ body {font-family: "Lato", sans-serif;}
     outline: none;
     text-align: left;
     cursor: pointer;
+    transition: 0.3s;
     font-size: 17px;
+    
 }
 
 /* Change background color of buttons on hover */
@@ -298,77 +280,5 @@ body {font-family: "Lato", sans-serif;}
     width: 70%;
     border-left: none;
     height: 300px;
-    display: none;
-}
-
-/* Clear floats after the tab */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-/*Resize Nav Bar*/
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-  
-  /*Scroll to Top*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: black;
-}
-
-/*Timer*/
-p10 {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-
-/*Text Image*/
-.container {
-    position: relative; 
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center it */
-}
-
-.container .content {
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
+    padding-bottom: 100px;
 }

@@ -1,120 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Homepage </title>
-            <!--Temp Favicon MAKE SURE TO CHANGE--> 
-            <link rel="icon" type="image/gif" href = "/images/favicon.jpg" sizes="16x16">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Homepage</title>
     </head>
     <body>
-        <!--Link to CSS Stylesheet--> 
-        <link rel="stylesheet" href="style.css">
-        <script src="scripts.js"></script>
-        <link rel="stylesheet" href="/w3css/3/w3.css">
+    <!--Temp Favicon MAKE SURE TO CHANGE--> 
+    <link rel="icon" type="image/gif" href = "/images/favicon.jpg" sizes="16x16">
+    <!--Link to CSS Stylesheet--> 
+    <link rel="stylesheet" href="style.css">
 
-        <!-- Menu-->
-        <h1>Welcome</h1>
-        <div class="container">
-
-        <!-- Slide Show -->
-        <section>
-          <img class="mySlides" src="images/Welcome.jpg"
-          style="width:100%">
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">Welcome</span>
+      </div>
+      
+    </div>
+    <div id="navbar">
+      <a class="active" href="Homepage.html">Home</a>
+      <a href="Bio.html">Bio</a>
+      <a href="Projects.html">Projects</a>
+    </div>
     
-          <img class="mySlides" src="images/Welcome1.jpg"
-          style="width:100%">
-          <img class="mySlides" src="images/Welcome2.jpg"
-          style="width:100%">
-        <div class="content">
-
-          <h1>Heading</h1>
-    <p>Lorem ipsum..</p>
-  </div>
-</div>
-        </section>
- 
-
-<style>
-    .container {
-    position: relative; 
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center it */
-}
-
-.container .content {
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
-}
-
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">Get To Know Me</h3>
+      <p>
+      My name is Britney Cheung. I have two younger siblings. I enjoy sleeping in on the weekends. Some of my favorite foods are macarons, pasta, and sushi. My favorite genre is JRPG. I think I want to pursue a degree in Computer Science.
+      </p>
+      <a href="Bio.html">
+        <button class="button1" style="vertical-align:middle">
+          <span> Read More </span>
+        </button>
+      </a>
+    </div>
     
-</style>
-        
-        <script>
-        // Automatic Slideshow - change image every 3 seconds
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-            x[myIndex-1].style.display = "block";
-            setTimeout(carousel, 3000);
-        }
-        </script>
-
-        <ul>
-            <!-- Sticky Menu--> 
-            <li><a class="active" href="Homepage.html">Homepage</a></li>
-            <li> <a href="Bio.html">Bio</a> </li>
-            <li> <a href="Image Gallery.html">Image Gallery</a> </li>
-            <li> <a href="Projects.html">Projects</a> </li>
-        </ul>
-        <p10 id="demo"></p10>
-
+    <div class="bgimg-2">
+      <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Projects</span>
+      </div>
+    </div>
+    
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
         <p>
-            Lorem ipsum suscipit odio erat libero nisi molestie blandit, lectus nostra turpis etiam nam morbi dictumst id faucibus, vivamus mattis odio ultrices porta inceptos tempor donec cursus ornare inceptos arcu tempus quisque etiam metus mi vehicula, taciti platea odio praesent primis etiam non senectus quisque, sit ad habitant eros eleifend nisl mattis platea curabitur aenean sapien fames lectus nibh nostra suspendisse dolor congue, dolor massa lacinia nostra suspendisse consectetur enim, convallis torquent consectetur maecenas et nisi rhoncus nam lorem a erat magna leo per libero nulla maecenas luctus varius vitae.
-            Lorem ipsum suscipit odio erat libero nisi molestie blandit, lectus nostra turpis etiam nam morbi dictumst id faucibus, vivamus mattis odio ultrices porta inceptos tempor donec cursus ornare inceptos arcu tempus quisque etiam metus mi vehicula, taciti platea odio praesent primis etiam non senectus quisque, sit ad habitant eros eleifend nisl mattis platea curabitur aenean sapien fames lectus nibh nostra suspendisse dolor congue, dolor massa lacinia nostra suspendisse consectetur enim, convallis torquent consectetur maecenas et nisi rhoncus nam lorem a erat magna leo per libero nulla maecenas luctus varius vitae.
-            Lorem ipsum suscipit odio erat libero nisi molestie blandit, lectus nostra turpis etiam nam morbi dictumst id faucibus, vivamus mattis odio ultrices porta inceptos tempor donec cursus ornare inceptos arcu tempus quisque etiam metus mi vehicula, taciti platea odio praesent primis etiam non senectus quisque, sit ad habitant eros eleifend nisl mattis platea curabitur aenean sapien fames lectus nibh nostra suspendisse dolor congue, dolor massa lacinia nostra suspendisse consectetur enim, convallis torquent consectetur maecenas et nisi rhoncus nam lorem a erat magna leo per libero nulla maecenas luctus varius vitae.
-            Lorem ipsum suscipit odio erat libero nisi molestie blandit, lectus nostra turpis etiam nam morbi dictumst id faucibus, vivamus mattis odio ultrices porta inceptos tempor donec cursus ornare inceptos arcu tempus quisque etiam metus mi vehicula, taciti platea odio praesent primis etiam non senectus quisque, sit ad habitant eros eleifend nisl mattis platea curabitur aenean sapien fames lectus nibh nostra suspendisse dolor congue, dolor massa lacinia nostra suspendisse consectetur enim, convallis torquent consectetur maecenas et nisi rhoncus nam lorem a erat magna leo per libero nulla maecenas luctus varius vitae.
+          Over the course of the year, projects from this class will be added to this website.
         </p>
+        <a href="Projects.html">
+        <button class="button1" style="vertical-align:middle">
+        <span> Read More </span>
+        </button>
+      </a>
+      </div>
+    </div>
+    
+    <div class="bgimg-3">
+      <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Timer Until School Ends</span>
+      </div>
+    </div>
+    
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p10 id="demo"></p10>
+      </div>
+    </div>
+    
+    <div class="bgimg-4">
+      <div class="caption">
+        <span class="border">Made by:Britney Cheung</span>
+      </div>
+    </div>
 
 
-                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-                <style>
-                    
-                    #myBtn {
-                      display: none;
-                      position: fixed;
-                      bottom: 20px;
-                      right: 30px;
-                      z-index: 99;
-                      font-size: 18px;
-                      border: none;
-                      outline: none;
-                      background-color: #4CAF50;
-                      color: white;
-                      cursor: pointer;
-                      padding: 15px;
-                      border-radius: 4px;
-                    }
-                    
-                    #myBtn:hover {
-                      background-color: #555;
-                    }
-                </style>
-                <a href="Bio.html"><button class="button1" style="vertical-align:middle"><span> Next </span></button></a>
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge ">
- <p>Made By Britney Cheung</p>
-</footer>    
-    </body>
+  <script src="java.js"></script>
+</body>
 </html>

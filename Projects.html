@@ -2,70 +2,47 @@
 <html>
     <head>
         <title> Projects </title>
-        <!--Temp Favicon MAKE SURE TO CHANGE--> 
-            <link rel="icon" type="image/gif" href = "/images/favicon.jpg" sizes="16x16">
     </head>
-     <body>
-        <link rel="stylesheet" href="style.css">
-        <script src="scripts.js"></script>
-        <ul>
-            <li> <a href="Homepage.html">Homepage</a> </li>
-            <li> <a href="Bio.html">Bio</a> </li>
-            <li> <a href="Image Gallery.html">Image Gallery</a> </li>
-            <li><a class="active" href="Projects.html">Projects</a></li>
-        </ul>
-<!-- How To (Small Tabs)-->         
-<!--ADD NEW PROJECTS HERE!!!--> 
+    <body>
+    <!--Temp Favicon MAKE SURE TO CHANGE--> 
+    <link rel="icon" type="image/gif" href = "/images/favicon.jpg" sizes="16x16">
+    <!--Link to CSS Stylesheet--> 
+    <link rel="stylesheet" href="style.css">
+    <div class="bgimg-5">
+        <div class="caption">
+            <span class="border">Welcome</span>
+        </div>
+    </div>
+    <div id="navbar">
+      <a href="Homepage.html">Home</a>
+      <a href="Bio.html">Bio</a>
+      <a class="active" href="Projects.html">Projects</a>
+    </div>
+    <!-- How To (Small Tabs)-->         
 <h2>Computer Principles Projects</h2>
-<p>Move the cursor over a tab to see more info: </p>
+<p>Move the cursor over a tab to see more info:</p>
 
+<!--ADD NEW PROJECTS HERE!!!--> 
 <div class="tab">
-  <button class="tablinks" onmouseover="openCity(event, 'London')">Untitled Project</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Paris')">Untitled Project</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Untitled Project</button>
+  <button class="tablinks" onclick="openCity(event, '1')" id="defaultOpen">Untitled Project 1</button>
+  <button class="tablinks" onclick="openCity(event, '2')">Untitled Project 2</button>
+  <button class="tablinks" onclick="openCity(event, '3')">Untitled Project 3</button>
 </div>
 
-<div id="London" class="tabcontent">
-  <h3>Untitled Project</h3>
-  <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra nisi et ex pharetra aliquam a cursus libero.
-  </p>
+<div id="1" class="tabcontent">
+  <h3>Untitled Project 1</h3>
+  <p>Oops. No content here yet. Come Back Later.</p>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Untitled Project</h3>
-  <p>Proin commodo lacus in lorem iaculis, vitae scelerisque diam aliquam. Aliquam erat volutpat.
-  </p> 
+<div id="2" class="tabcontent">
+  <h3>Untitled Project 2</h3>
+  <p>Oops. No content here yet. Come Back Later.</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Untitled Project</h3>
-  <p> Etiam in leo eget dolor elementum malesuada sit amet eu sem. Praesent egestas vitae ante non bibendum.
-  </p>
+<div id="3" class="tabcontent">
+  <h3>Untitled Project 3</h3>
+  <p>Oops. No content here yet. Come Back Later.</p>
 </div>
-
-<div class="clearfix"></div>
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-<!--
-            <a href="Image Gallery.html" class="button"> Previous </a>
-          -->
-        <!-- Animated Button-->
-<a href="Image Gallery.html"><button class="button2" style="vertical-align:middle"><span> Previous </span></button></a>
-
+    <script src="java.js"></script>
     </body>
 </html>
